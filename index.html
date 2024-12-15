@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Split Up App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Split Up App</h1>
+    <form id="personForm">
+      <label for="numPersons">Enter Total Number of Persons:</label>
+      <input type="number" id="numPersons" name="numPersons" min="2" placeholder="e.g., 3" required>
+      <button type="button" id="generateMatrix">Generate Matrix</button>
+    </form>
+
+    <div id="matrixContainer" class="hidden">
+      <h2>Enter Transaction Matrix:</h2>
+      <div id="matrix"></div>
+      <button type="button" id="calculateSplit">Calculate Split</button>
+    </div>
+
+    <div id="resultContainer" class="hidden">
+      <h2>Results:</h2>
+      <pre id="results"></pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
